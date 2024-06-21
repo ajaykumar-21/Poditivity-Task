@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: #FAF9F6;
+  border-radius: 10px;
+}
+
+input {
+  height: 30px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  color: grey;
+  padding-left: 10px;
+  margin: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputDate {
+    color: grey;
+}
+
+textarea {
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  color: grey;
+  margin-top: 5px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.wrapperButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: orange;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,15 @@
+.container {
+  margin-bottom: 50px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  p {
+    opacity: 0.5;
+  }
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: rgb(162, 111, 111);
+}

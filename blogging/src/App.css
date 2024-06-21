@@ -1,0 +1,21 @@
+.link {
+  color: #2f2626;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: grey;
+  height: 50px;
+  width: auto;
+}
+
+/* @media (min-width: 768px) {
+ .navBar {
+  width: 100%;
+  height: 100%;
+ }
+} */

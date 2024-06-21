@@ -1,0 +1,11 @@
+.conatiner {
+    width: 800px;
+    height: auto;
+    h1 {
+        color: brown;
+    }
+
+    p {
+        opacity: .5;
+    }
+}
