@@ -9,17 +9,18 @@ function PostForm({ initialPost, onSave }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSave({ title, author, content, date });
+    onSave({ title, author, content, date }); // Calling the onSave function and passing the updated post details as an object.
   };
 
   useEffect(() => {
+    // If the initialPost object is not null or undefined then set the state variables (title, author, content, date).
     if (initialPost) {
       setTitle(initialPost.title);
       setAuthor(initialPost.author);
       setContent(initialPost.content);
       setDate(initialPost.date);
     }
-  }, [initialPost]);
+  }, [initialPost]); // the useEffect will run whenever the initialPost variable changes.
 
   return (
     <div className={styles.container}>

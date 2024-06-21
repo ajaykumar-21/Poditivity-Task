@@ -8,12 +8,12 @@ function HomePage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const storedPosts = JSON.parse(localStorage.getItem("blogPosts")) || [];
+    const storedPosts = JSON.parse(localStorage.getItem("blogPosts")) || []; // Retrieve the stored data from localStorage and If there are no stored data, initialize with an empty array.
     setPosts(storedPosts);
   }, []);
 
   const handlePostClick = (id) => {
-    navigate(`/post/${id}`);
+    navigate(`/post/${id}`); // Navigate to the view page of the updated post with post ID.
   };
 
   return (

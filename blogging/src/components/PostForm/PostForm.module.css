@@ -4,8 +4,12 @@
   align-items: center;
   width: 500px;
   height: 500px;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
   border-radius: 10px;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 input {
@@ -21,7 +25,7 @@ input {
 }
 
 .inputDate {
-    color: grey;
+  color: grey;
 }
 
 textarea {

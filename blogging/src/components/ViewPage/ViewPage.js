@@ -9,6 +9,7 @@ function ViewPage() {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
+    //Retrieve data from local storage and passing data in postview as props
     const storedPosts = JSON.parse(localStorage.getItem("blogPosts")) || [];
     const postToView = storedPosts.find((post) => post.id === parseInt(id));
     setPost(postToView);
@@ -16,8 +17,7 @@ function ViewPage() {
 
   const deletePost = () => {
     const storedPosts = JSON.parse(localStorage.getItem("blogPosts")) || [];
-    const updatedPosts = storedPosts.filter((p) => p.id !== parseInt(id));
-    console.log(updatedPosts, id);
+    const updatedPosts = storedPosts.filter((p) => p.id !== parseInt(id)); // This filter operation removes the post from storedPosts where the ID matches id.
     localStorage.setItem("blogPosts", JSON.stringify(updatedPosts));
     navigate("/");
   };
